@@ -26,7 +26,7 @@ namespace TimetableApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetProject([Range(0, int.MaxValue)] int id)
+        public async Task<IActionResult> GetProject([Range(1, int.MaxValue)] int id)
         {
             var employee = await _employeeService.ListAsync(id);
 
@@ -70,7 +70,7 @@ namespace TimetableApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProject([Range(0, int.MaxValue)] int id)
+        public async Task<IActionResult> DeleteProject([Range(1, int.MaxValue)] int id)
         {
             await _employeeService.RemoveAsync(id);
 

@@ -12,16 +12,16 @@ namespace TimetableApi.Services.Activities.Models
     public class ActivityAddDto
     {
         [Required]
-        [Range(0, int.MaxValue)]
+        [Range(1, int.MaxValue)]
         public int ProjectId { get; set; }
         [Required]
-        [Range(0, int.MaxValue)]
+        [Range(1, int.MaxValue)]
         public int EmployeeId { get; set; }
         [Required]
-        [Range(0, int.MaxValue)]
+        [Range(1, int.MaxValue)]
         public int RoleId { get; set; }
         [Required]
-        [Range(0, int.MaxValue)]
+        [Range(1, int.MaxValue)]
         public int ActivityTypeId { get; set; }
         [Required]
         public string Date { get; set; }

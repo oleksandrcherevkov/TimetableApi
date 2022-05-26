@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 using TimetableApi.HelperExtensions;
 using TimetableApi.Services.Projects;
@@ -25,7 +26,7 @@ namespace TimetableApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetProject(int id)
+        public async Task<IActionResult> GetProject([Range(1, int.MaxValue)] int id)
         {
             var project = await _projectService.ListAsync(id);
 
@@ -55,7 +56,7 @@ namespace TimetableApi.Controllers
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateProject(
-            [FromRoute] int id, [FromBody] ProjectAddUpdateDto updateDto)
+            [FromRoute][Range(1, int.MaxValue)] int id, [FromBody] ProjectAddUpdateDto updateDto)
         {
             var project = await _projectService.UpdateAsync(id, updateDto);
 
@@ -69,7 +70,7 @@ namespace TimetableApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProject(int id)
+        public async Task<IActionResult> DeleteProject([Range(1, int.MaxValue)] int id)
         {
             await _projectService.RemoveAsync(id);
 
