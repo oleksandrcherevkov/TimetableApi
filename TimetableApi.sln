@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimetableApi.DAL", "Timetab
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimetableApi.Services", "TimetableApi.Services\TimetableApi.Services.csproj", "{26F2B57E-652A-4C3E-8296-A439F0CF39FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimetableApi.Converters", "TimetableApi.Converters\TimetableApi.Converters.csproj", "{8B60ADFC-8C6A-4470-BFF8-839CD7BAB8B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimetableApi.Converters", "TimetableApi.Converters\TimetableApi.Converters.csproj", "{8B60ADFC-8C6A-4470-BFF8-839CD7BAB8B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimetableApi.Tests", "TimetableApi.Tests\TimetableApi.Tests.csproj", "{549EF34A-8B3D-49AB-9198-D5B8025C0E28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{8B60ADFC-8C6A-4470-BFF8-839CD7BAB8B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B60ADFC-8C6A-4470-BFF8-839CD7BAB8B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B60ADFC-8C6A-4470-BFF8-839CD7BAB8B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{549EF34A-8B3D-49AB-9198-D5B8025C0E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549EF34A-8B3D-49AB-9198-D5B8025C0E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549EF34A-8B3D-49AB-9198-D5B8025C0E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549EF34A-8B3D-49AB-9198-D5B8025C0E28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
